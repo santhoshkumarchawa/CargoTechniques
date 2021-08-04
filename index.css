@@ -4,17 +4,26 @@ main {
     padding: 10px;
     background: beige;
   }
-  div{
-    background: lightpink;
-
+  head{
+    width: 100%;
   }
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+    text-align: right;
+    font-size:x-large;
+    border-bottom: 1px dotted orange;
+    background-color: orange;
+    padding:8px;
+  }
+ 
   h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:black;
-    text-align: left;
+    font-size:x-large;
     border-bottom: 1px dotted orange;
-    background-color: orange;
-    padding:5px;
+    background-color: lightseagreen;
+    padding:9px;
   }
   p {
     font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +48,10 @@ main {
     border: 1.2px solid black;
     padding: 6px;
   }
-  
+  form{
+    text-align:left;
+
+  }
   
   #customers tr:hover {background-color: silver;}
   
@@ -52,12 +64,12 @@ main {
   }
   a
   {
-      text-align: right;
       color: black;
-      font-size: 0.50cm;
+      font-size: 0.40cm;
       margin-right: 3mm;
   }
   body {
     
-background-color: black;
+  background-image: url("https://wallpapercave.com/wp/wp7213368.jpg");
+  background-color: whitesmoke;
 }
