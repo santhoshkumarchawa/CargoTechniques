@@ -17,19 +17,19 @@ function funcLogin()
     }
     else if(user!== "Santhoshkumarchawa@gmail.com" && pass=="Wxyz2042")
     {
-        window.alert("Invalid UserName")
+        alert("Invalid UserName")
         document.getElementById("fname").value=""
         document.getElementById("lname").value=""
     }
     else if(user== "Santhoshkumarchawa@gmail.com" && pass!=="Wxyz2042")
     {
-        window.alert("Invalid Password")
+        alert("Invalid Password")
         document.getElementById("fname").value=""
         document.getElementById("lname").value=""
     }
     else
     {
-        window.alert("Enter UserName and Password to Login")
+        alert("Enter UserName and Password to Login")
         document.getElementById("fname").value=""
         document.getElementById("lname").value=""
     }
