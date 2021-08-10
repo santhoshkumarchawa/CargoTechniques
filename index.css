@@ -4,7 +4,8 @@ main {
     padding: 10px;
     background: beige;
   }
-  head{
+  head
+  {
     width: 100%;
   }
   h2 {
@@ -22,7 +23,7 @@ main {
     color:black;
     font-size:x-large;
     border-bottom: 1px dotted orange;
-    background-color: lightseagreen;
+    background-color:yellowgreen;
     padding:9px;
   }
   p {
@@ -70,6 +71,6 @@ main {
   }
   body {
     
-  background-image: url("https://wallpapercave.com/wp/wp7213368.jpg");
+  background-image: url("https://media.gettyimages.com/photos/saffron-picture-id111652757?s=2048x2048");
   background-color: whitesmoke;
 }

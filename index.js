@@ -17,23 +17,46 @@ function funcLogin()
     }
     else if(user!== "Santhoshkumarchawa@gmail.com" && pass=="Wxyz2042")
     {
-        alert("Invalid UserName")
+        if(user=="")
+        {
+            alert("UserName Field Cannot be Blank")
+        }
+        else
+        {
+            alert("Incorrect UserName")
+        }
         document.getElementById("fname").value=""
         document.getElementById("lname").value=""
     }
     else if(user== "Santhoshkumarchawa@gmail.com" && pass!=="Wxyz2042")
     {
-        alert("Invalid Password")
+        if(pass=="")
+        {
+            alert("Password Field Cannot be Blank")
+        }
+        else
+        {
+            alert("Incorrect Password")
+        }
+        document.getElementById("fname").value=""
+        document.getElementById("lname").value=""
+        document.getElementById("lname").style.borderColor="#ff0000";
+    }
+
+    else if(user!= "Santhoshkumarchawa@gmail.com" && pass!=="Wxyz2042")
+        {
+            if(user=="" && pass=="")
+            {
+                alert("UserName and Password Cannot be blank")
+            }
+            else
+            {
+                alert("Incorrect UserName and Password")
+            }
+            
+        
         document.getElementById("fname").value=""
         document.getElementById("lname").value=""
     }
-    else
-    {
-        alert("Enter UserName and Password to Login")
-        document.getElementById("fname").value=""
-        document.getElementById("lname").value=""
-    }
-
-    
-
+   
 }
