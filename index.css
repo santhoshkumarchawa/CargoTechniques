@@ -9,12 +9,13 @@ main {
     width: 100%;
   }
   h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*Cambria, Cochin, Georgia, Times, 'Times New Roman', serif*/
+    font-family:Arial, Helvetica, sans-serif ;
     color:black;
-    text-align: right;
-    font-size:x-large;
+    text-align: left;
+    font-size:large;
     border-bottom: 1px dotted orange;
-    background-color: orange;
+    background-color: black;
     padding:8px;
   }
  
@@ -74,3 +75,66 @@ main {
   background-image: url("https://media.gettyimages.com/photos/saffron-picture-id111652757?s=2048x2048");
   background-color: whitesmoke;
 }
+
+#line1 {
+  width: 45px;
+  height: 5px;
+  background-color: white; 
+  margin: 6px 0;
+}
+#Loggedin
+{
+  color: aliceblue;
+}
+#Vehicle_Name
+{
+  
+  color: aliceblue;
+}
+#Vehicle_Type
+{
+  
+  color:aliceblue;
+}
+#Delivery_City
+{
+  
+  color: aliceblue;
+}
+#Delivery_Address
+{
+  color: aliceblue;
+}
+#Delivery_Address2
+{
+  color: aliceblue;
+}
+#Delivery_PinCode
+{
+  color: aliceblue;
+}
+.accordion {
+  background-color: yellowgreen;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 15%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active{
+  background-color: aliceblue;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-image:url(https://www.desktopbackground.org/p/2012/04/15/374934_dark-website-backgrounds-wallpapers-walldevil-best-free-hd_1920x1200_h.jpg) ;
+}
+
+

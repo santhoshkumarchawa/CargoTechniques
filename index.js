@@ -4,7 +4,9 @@ function funcLogin()
     var pass = document.getElementById("lname").value;
     if(user=="Santhoshkumarchawa@gmail.com" && pass=="Wxyz2042")
     {
-        document.getElementById("Submit_santhosh").innerHTML = "Login Successful";
+       
+       window.location.href="homepage.html";
+        /* document.getElementById("Submit_santhosh").innerHTML = "Login Successful";
         document.getElementById("fname").style.display = "none";
         document.getElementById("userID").style.display = "none";
         document.getElementById("password").style.display = "none";
@@ -12,7 +14,9 @@ function funcLogin()
         document.getElementById("Submit_santhosh").style.marginRight="47%";
         document.getElementById("Login").style.display="none"
         document.getElementById("Forgot_SignUp").style.display="none";
-        document.getElementById("EssentialLinks").style.display="none";
+        document.getElementById("EssentialLinks").style.display="none";*/
+
+
         
     }
     else if(user!== "Santhoshkumarchawa@gmail.com" && pass=="Wxyz2042")
@@ -60,3 +64,20 @@ function funcLogin()
     }
    
 }
+
+function ResetOrder()
+{
+   document.getElementById("VehicleName").value="None";
+   document.getElementById("VehicleType").value="None";
+   document.getElementById("DeliveryCity").value="None";
+}
+
+
+function CreateOrder()
+{
+    var d = new Date();
+    var n = d.getTime();
+    alert("Order Created Successfully, Order Num: "+n);
+}
+
+
