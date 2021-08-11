@@ -12,3 +12,21 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+function CreateOrder()
+{
+  var VhName=document.getElementById("VehicleName");
+  var SelectedValue=VhName.options[VhName.selectedIndex].value;
+  
+  if(SelectedValue == "Volvo" || SelectedValue == "Ferrari" || SelectedValue == "Audi" || SelectedValue == "Mercedes-Benz" )
+  {  
+    alert("Order Created Successfully, Order Num: "+"CT"+Date.now());
+  }
+  else 
+  {
+    alert("Select Valid VehicleName");
+  }
+
+
+}

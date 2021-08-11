@@ -75,9 +75,7 @@ function ResetOrder()
 
 function CreateOrder()
 {
-    var d = new Date();
-    var n = d.getTime();
-    alert("Order Created Successfully, Order Num: "+n);
+    alert("Order Created Successfully, Order Num: ");
 }
 
 

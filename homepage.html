@@ -39,11 +39,11 @@
 
                 <label id="Vehicle_Name">Vehicle Name :&nbsp;&nbsp;</label>
                 <select id="VehicleName" style="width: 4.30cm;">
-                    <option value="volvo"></option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Ferrari</option>
-                    <option value="opel">Mercedes-Benz</option>
-                    <option value="audi">Audi</option>
+                    <option value="Null"></option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Audi">Audi</option>
                   </select>
                   &nbsp;&nbsp;
                 <label id="Vehicle_Type">Vehicle Type &nbsp; :&nbsp;</label>
@@ -54,7 +54,7 @@
                     <option value="opel">4 Wheeler</option>
                     <option value="audi">6 Wheeler</option>
                   </select>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <label id="Delivery_City">City:</label>
                 <select id="DeliveryCity"style="width: 4.30cm;">
                     <option value="volvo"></option>
@@ -67,20 +67,19 @@
                     <option value="audi">Pune</option>
                     <option value="audi">Kolkata</option>
                   </select>
-<br>
-<br>
-<br>
-&nbsp;
+                  <br><br><br>&nbsp;
                 <label id="Delivery_Address">Address Line1:</label>&nbsp;
                 <input type="text"id="AddressLine1"  > </input>
-&nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <label id="Delivery_Address2">Address Line2:</label>&nbsp;
                 <input type="text" id="AddressLine2" > </input>
-&nbsp;
+                &nbsp;
                 <label id="Delivery_PinCode">Pin Code:</label>
                 <input type="text" id=Pincode> </input>
                 <br><br><br>
-                <button type="submit" onclick="CreateOrder()" style="padding: 8px;font-size: medium;background-color: blanchedalmond;margin-left: 35.5cm;"><strong>Create Order</strong> </button>
+                <button onclick="CreateOrder()" style="padding: 8px;font-size: medium;background-color: blue;margin-right: 35.5cm;color: aliceblue;">
+                <strong>Create Order</strong>
+                </button>
                 <br>
                 <br>
 
@@ -327,12 +326,12 @@
       <br>
 
 
-      <button class="accordion" style="font-size: large;"><b>New Arrivals</b></button>
+      <button class="accordion" style="font-size: large;"><b>Services</b></button>
       <div class="panel">
         <br>
         <br>&nbsp;
 
-                <label id="Vehicle_Name">Vehicle Name :&nbsp;&nbsp;</label>
+                <label id="Vehicle_Name">Vehicle Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;</label>
                 <select id="VehicleName" style="width: 4.30cm;">
                     <option value="volvo"></option>
                     <option value="volvo">Volvo</option>
@@ -340,7 +339,7 @@
                     <option value="opel">Mercedes-Benz</option>
                     <option value="audi">Audi</option>
                   </select>
-                  &nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <label id="Vehicle_Type">Vehicle Type &nbsp; :&nbsp;</label>
                 <select id="VehicleType" style="width: 4.30cm;">
                     <option value="volvo"></option>
@@ -349,33 +348,24 @@
                     <option value="opel">4 Wheeler</option>
                     <option value="audi">6 Wheeler</option>
                   </select>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label id="Delivery_City">City:</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label id="Delivery_City">Vehicle Insurance:</label>
                 <select id="DeliveryCity"style="width: 4.30cm;">
                     <option value="volvo"></option>
-                    <option value="volvo">Hyderabad</option>
-                    <option value="saab">Bangalore</option>
-                    <option value="opel">Mumbai</option>
-                    <option value="audi">Delhi</option>
-                    <option value="audi">Chennai</option>
-                    <option value="audi">Ahmedabad</option>
-                    <option value="audi">Pune</option>
-                    <option value="audi">Kolkata</option>
-                  </select>
-<br>
-<br>
-<br>
-&nbsp;
-                <label id="Delivery_Address">Address Line1:</label>&nbsp;
+                    <option value="volvo">1 Year</option>
+                    <option value="saab">2 Year</option>
+                    <option value="opel">3 Year</option>
+                  </select><br><br><br>
+
+                  &nbsp;
+                <label id="Delivery_Address">Vehicle Reg Num :</label>&nbsp;
                 <input type="text"id="AddressLine1"  > </input>
-&nbsp;&nbsp;
-                <label id="Delivery_Address2">Address Line2:</label>&nbsp;
+                  &nbsp;&nbsp;
+                <label id="Delivery_Address2">Insurance Delivery Address:</label>&nbsp;
                 <input type="text" id="AddressLine2" > </input>
-&nbsp;
-                <label id="Delivery_PinCode">Pin Code:</label>
-                <input type="text" id=Pincode> </input>
+                  &nbsp;
                 <br><br><br>
-                <button type="submit" onclick="CreateOrder()" style="padding: 8px;font-size: medium;background-color: blanchedalmond;margin-left: 35.5cm;"><strong>Create Order</strong> </button>
+                <button type="submit" onclick="CreateOrder()" style="padding: 8px;font-size: medium;background-color: blanchedalmond;margin-left: 33cm;"><strong>Apply vehicle Insurance</strong> </button>
                 <br>
                 <br>
 
