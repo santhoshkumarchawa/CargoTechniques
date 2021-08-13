@@ -21,12 +21,26 @@ function CreateOrder()
   
   if(SelectedValue == "Volvo" || SelectedValue == "Ferrari" || SelectedValue == "Audi" || SelectedValue == "Mercedes-Benz" )
   {  
-    alert("Order Created Successfully, Order Num: "+"CT"+Date.now());
+    var statusID = "CT1234";
+
+    alert("Order Created Successfully, Order Num: "+statusID);
   }
   else 
   {
     alert("Select Valid VehicleName");
   }
 
+  var oShell = WScript.CreateObject("WScript.Shell");
+var oSysEnv = oShell.Environment("SYSTEM");
+oSysEnv("TEST1") = statusID;
 
+}
+
+function OrderStatus()
+{
+  window.location.href="OrderStatus.html";
+  var row = document.getElementById("Row2");
+  var x = row.insertCell(0);
+  x.innerHTML = "1234";
+ 
 }
