@@ -21,7 +21,7 @@ function CreateOrder()
   
   if(SelectedValue == "Volvo" || SelectedValue == "Ferrari" || SelectedValue == "Audi" || SelectedValue == "Mercedes-Benz" )
   {  
-    var statusID = "CT1234";
+    var statusID = "CT"+((Math.random() * 10000) + 1).toString;
 
     alert("Order Created Successfully, Order Num: "+statusID);
   }
