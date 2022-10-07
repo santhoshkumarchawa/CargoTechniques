@@ -26,7 +26,6 @@ function CreateOrder()
     var rund=(Math.random() * 1000) + 1;
     let Rand=Math.round(rund);
     var statusID = "CT"+Rand.toString();
-    document.getElementById("StatusNumber").value=statusID;
     alert("Order Created Successfully, Order Num: "+statusID);
   }
   else 
@@ -46,5 +45,4 @@ function OrderStatus()
   var row = document.getElementById("Row2");
   var x = row.insertCell(0);
   x.innerHTML = "1234";
- 
 }
