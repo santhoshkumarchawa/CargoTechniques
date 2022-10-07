@@ -47,9 +47,11 @@ oSysEnv("TEST1") = generaterandom();
 function OrderStatus()
 {
   window.location.href="OrderStatus.html";
-  var row = document.getElementById("Row2");
-  var x = row.insertCell(0);
-  x.innerHTML = "1234";
-  document.getElementById("StatusNumber").value=generaterandom();
+ // var row = document.getElementById("Row2");
+  //var x = row.insertCell(0);
+  //x.innerHTML = "1234";
+  document.getElementById("Row2").rows[2].cells.item(1).innerHTML=generaterandom();
+  document.getElementById("Row2").rows[2].cells.item(2).innerHTML="Mercedes Benz";
+  document.getElementById("Row2").rows[2].cells.item(3).innerHTML="4 wheeler"
 }
 
