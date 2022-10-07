@@ -31,7 +31,7 @@ function CreateOrder()
   
   if(SelectedValue == "Volvo" || SelectedValue == "Ferrari" || SelectedValue == "Audi" || SelectedValue == "Mercedes-Benz")
   {  
-    alert("Order Created Successfully, Order Num: "+statusID);
+    alert("Order Created Successfully, Order Num: "+generaterandom());
   }
   else 
   {
@@ -40,7 +40,7 @@ function CreateOrder()
 
   var oShell = WScript.CreateObject("WScript.Shell");
 var oSysEnv = oShell.Environment("SYSTEM");
-oSysEnv("TEST1") = statusID;
+oSysEnv("TEST1") = generaterandom();
 
 }
 
