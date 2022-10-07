@@ -1,7 +1,6 @@
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -14,18 +13,24 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+function generaterandom()
+{
+
+  var rund=(Math.random() * 1000) + 1;
+let Rand=Math.round(rund);
+var statusID = "CT"+Rand.toString();
+
+return statusID;
+}
+
 
 function CreateOrder()
 {
   var VhName=document.getElementById("VehicleName");
   var SelectedValue=VhName.options[VhName.selectedIndex].value;
   
-  
-  if(SelectedValue == "Volvo" || SelectedValue == "Ferrari" || SelectedValue == "Audi" || SelectedValue == "Mercedes-Benz" )
+  if(SelectedValue == "Volvo" || SelectedValue == "Ferrari" || SelectedValue == "Audi" || SelectedValue == "Mercedes-Benz")
   {  
-    var rund=(Math.random() * 1000) + 1;
-    let Rand=Math.round(rund);
-    var statusID = "CT"+Rand.toString();
     alert("Order Created Successfully, Order Num: "+statusID);
   }
   else 
@@ -45,4 +50,6 @@ function OrderStatus()
   var row = document.getElementById("Row2");
   var x = row.insertCell(0);
   x.innerHTML = "1234";
+  document.getElementById("StatusNumber").value=generaterandom();
 }
+
