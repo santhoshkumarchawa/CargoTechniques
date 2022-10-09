@@ -15,14 +15,14 @@ for (i = 0; i < acc.length; i++) {
 
 function generaterandom()
 {
-
-  var rund=(Math.random() * 1000) + 1;
+var rund=(Math.random() * 1000) + 1;
 let Rand=Math.round(rund);
 var statusID = "CT"+Rand.toString();
-
+window.sessionStorage.setItem('StatId', statusID);
 return statusID;
 }
 
+var StatID = window.sessionStorage.getItem('StatId');
 
 function CreateOrder()
 {
@@ -31,27 +31,25 @@ function CreateOrder()
   
   if(SelectedValue == "Volvo" || SelectedValue == "Ferrari" || SelectedValue == "Audi" || SelectedValue == "Mercedes-Benz")
   {  
-    alert("Order Created Successfully, Order Num: "+generaterandom());
+    StatID = generaterandom();
+
+    alert("Order Created Successfully, Order Num: "+StatID);
   }
   else 
   {
     alert("Select Valid VehicleName");
   }
 
-  var oShell = WScript.CreateObject("WScript.Shell");
-var oSysEnv = oShell.Environment("SYSTEM");
-oSysEnv("TEST1") = generaterandom();
+  //var oShell = WScript.CreateObject("WScript.Shell");
+//var oSysEnv = oShell.Environment("SYSTEM");
+//oSysEnv("TEST1") = generaterandom();
 
 }
 
 function OrderStatus()
 {
-  window.location.href="OrderStatus.html";
- // var row = document.getElementById("Row2");
-  //var x = row.insertCell(0);
-  //x.innerHTML = "1234";
-  document.getElementById("Row2").rows[2].cells.item(1).innerHTML=generaterandom();
-  document.getElementById("Row2").rows[2].cells.item(2).innerHTML="Mercedes Benz";
-  document.getElementById("Row2").rows[2].cells.item(3).innerHTML="4 wheeler"
+ window.location.href="OrderStatus.html";
 }
+
+document.getElementById("StatusNumber").innerHTML=StatID;
 

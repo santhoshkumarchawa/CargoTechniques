@@ -73,9 +73,4 @@ function ResetOrder()
 }
 
 
-function CreateOrder()
-{
-    alert("Order Created Successfully, Order Num: ");
-}
-
 
